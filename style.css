@@ -1,0 +1,149 @@
+body {
+  background-color: #fff;
+}
+
+.banner-carousel-container{
+  //max-width: 950px;
+}
+
+.eboard-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px black;
+  background-color: #fff;
+}
+
+.event-card {
+  width: 250px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  max-height: 200px;
+}
+
+#eboard-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+#events-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-image {
+  width: 200px;
+  height: 200px;
+}
+
+.card-image img{
+  border-radius: 5px;
+}
+
+.card-image-and-name{
+  margin: 10px;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-item {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.carousel-item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 100% 70%;
+}
+
+.carousel-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  text-align: center;
+  color: white;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(0,39,74,.5);
+}
+
+#club-name{
+  margin-top: 10%;
+  display: block;
+  text-transform: uppercase;
+  font-size: 84px;
+}
+
+.content-container {
+  margin: 0 auto;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 950px;
+}
+
+.content-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00205B;
+}
+
+
+.bg-rice-blue {
+  background-color: #00205B;
+}
+
+.bg-medium-blue {
+
+}
+
+.bg-rich-blue{
+  background-color: #0A509E;
+}
+
+.bg-bright-blue {
+  background-color: #9FDDF9;
+}
+.bg-light-blue-gray{
+  background-color: #ADC7DC;
+}
+
+.nav-container{
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.name-and-title {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.social-media-container {
+  margin-right: 20px;
+}
+
+.social-media-icon {
+  margin: 0 5px;
+}
