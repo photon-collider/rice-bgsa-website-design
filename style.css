@@ -13,7 +13,7 @@ body {
   align-items: center;
   padding: 20px;
   margin: 10px;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 15px grey;
   background-color: #fff;
 }
 
@@ -57,6 +57,7 @@ body {
 .card-image-and-name{
   margin: 10px;
 }
+
 
 .carousel-container {
   position: relative;
@@ -116,13 +117,16 @@ body {
 }
 
 .bg-medium-blue {
-
+  background-color: #4D9AD4;
 }
 
 .bg-rich-blue{
   background-color: #0A509E;
 }
 
+.bg-megalight-blue{
+  background-color: #eff6fc;
+}
 .bg-bright-blue {
   background-color: #9FDDF9;
 }
@@ -130,6 +134,38 @@ body {
   background-color: #ADC7DC;
 }
 
+.event-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+.goals-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.goal-card {
+  border: 1px solid transparent;
+  border-radius: 15px;
+  margin: 0 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 5px gray;
+  transition: .2s;
+}
+
+.goal-card:hover{
+  transform: scale(1.1);
+}
+
+.goal-card-text{
+  margin-top: 20px;
+}
 .nav-container{
   max-width: 950px;
   margin: 0 auto;
