@@ -10,6 +10,8 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7f324614cf.js"></script>
 
@@ -37,13 +39,16 @@
             <a href="#" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About Us</a>
+            <a href="#about-us" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">E-Board</a>
+            <a href="#event-header" class="nav-link">Upcoming Events</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Events</a>
+            <a href="#e-board" class="nav-link">E-Board</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-us" class="nav-link">Contact Us</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Announcements</a>
@@ -52,21 +57,6 @@
             <a href="#" class="nav-link">Resources</a>
           </li>
         </ul>
-
-        <ul class="navbar-nav social-media-container">
-          <li>
-            <a href="https://www.facebook.com/Ricebgsa/ ">
-              <i class="fab fa-facebook-f fa-lg social-media-icon"></i></a>
-            <a href="https://twitter.com/BGSARice">
-              <i class="fab fa-twitter fa-lg social-media-icon"></i></a>
-            <a href="https://www.instagram.com/bgsarice">
-              <i class="fab fa-instagram fa-lg social-media-icon"></i></a>
-          </li>
-        </ul>
-
-        <a href="https://mailman.rice.edu/mailman/listinfo/bgsa-l"\
-           class='btn btn-outline-light'> Subscribe</a>
-
       </div>
     </nav>
 
@@ -96,11 +86,13 @@
       <div class="carousel-overlay">
         <h1 id='club-name'>Black Graduate Student Association</h1>
         <h2 id='university'>Rice University</h2>
+        <a href="https://mailman.rice.edu/mailman/listinfo/bgsa-l"\
+           class='btn btn-outline-light' id='btn-subscribe'> Subscribe</a>
       </div>
     </div>
 
-    <div class="">
-      <div class="content-container">
+    <div class="bg-megalight-blue">
+      <div class="content-container" id="about-us">
         <h2>About Us</h2>
         <p>The BGSA aims to support students of African descent in their
            matriculation of the academic programs and social environments within
@@ -114,39 +106,99 @@
       </div>
     </div>
 
-    <div class="">
+
+    <div class="bg-rich-blue">
       <div class="content-container">
-        <h2>Goals</h2>
-        <div class="goals-container">
-          <div class="goal-card col-sm bg-megalight-blue">
-            <i class="fas fa-user-graduate fa-4x"></i>
-            <p class="goal-card-text">
-              To provide a professional, informative, and social network for
-              graduate students of African descent in order to ensure their
-              retention and continued academic success at Rice University.
-            </p>
-          </div>
-          <div class="goal-card col-sm bg-megalight-blue">
-            <i class="fas fa-hands-helping fa-4x"></i>
-            <p class="goal-card-text">To work with the undergraduate
-              students of African heritage in order to encourage them
-              to pursue graduate degrees</p>
+        <h2 id='event-header'>Upcoming Events</h2>
+        <div id="events-card-container">
+          
+          <div class="card event-card">
+            <img src="" alt="">
+            <div class="card-header event-card-header">
+              <h5 class="card-title">Navigating Grad Life</h5>
+            </div>
+
+            <div class="event-card-body flex-column">
+              <ul>
+                <li><i class="far fa-calendar-alt"></i> August, 2019</li>
+                <li><i class="far fa-clock"></i> 5:00 - 6:00 PM</li>
+                <li><i class="far fa-compass"></i> Secret Room</li>
+              </ul>
+
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
           </div>
 
-          <div class="goal-card col-sm bg-megalight-blue">
-            <i class="fas fa-university fa-4x"></i>
-            <p class="goal-card-text">
-              To assist Rice University in recruiting qualified
-               students of African heritage into the University’s graduate and
-              professional programs.</p>
+          <div class="card event-card">
+            <div class="card-header event-card-header"> <h5 class="card-title">Writing Workshop: Fellowships and Application</h5> </div>
+            <div class="event-card-body flex-column">
+              <ul>
+                <li><i class="far fa-calendar-alt"></i> September, 2019</li>
+                <li><i class="far fa-clock"></i> 5:00 - 6:00 PM</li>
+                <li><i class="far fa-compass"></i> Lounge Room Place</li>
+              </ul>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
           </div>
+
+          <div class="card event-card">
+            <div class="card-header event-card-header flex-column">
+              <h5 class="card-title">Friendsgiving</h5> </div>
+            <div class="event-card-body">
+              <ul>
+                <li><i class="far fa-calendar-alt"></i> November, 2019</li>
+                <li><i class="far fa-clock"></i> 5:00 - 6:00 PM</li>
+                <li><i class="far fa-compass"></i> Lounge Room Place</li>
+              </ul>
+
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+          </div>
+
+          <div class="card event-card">
+            <div class="card-header event-card-header">
+              <h5 class='card-title'>Holiday Party</h5></div>
+
+            <div class="event-card-body">
+              <ul>
+                <li><i class="far fa-calendar-alt"></i> December, 2019</li>
+                <li><i class="far fa-clock"></i> 5:00 - 6:00 PM</li>
+                <li><i class="far fa-compass"></i> Lounge Room Place</li>
+              </ul>
+
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
+          </div>
+
+          <div class="card event-card">
+            <div class="card-header event-card-header"><h5 class="card-title">Place Holder</h5></div>
+            <div class="event-card-body">
+              <ul>
+                <li><i class="far fa-calendar-alt"></i> January, 2020</li>
+                <li><i class="far fa-clock"></i> 5:00 - 6:00 PM</li>
+                <li><i class="far fa-compass"></i> Lounge Room Place</li>
+              </ul>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <div class="bg-light-blue-gray">
+    <div class="bg-megalight-blue">
       <div class="content-container">
-        <h2>Executive Board</h2>
+        <h2 id="e-board">Executive Board</h2>
         <div id="eboard-card-container">
           <div class="card eboard-card">
             <div class="card-image">
@@ -154,7 +206,7 @@
             </div>
             <div class="card-body">
               <div class="name-and-title">
-                <h5 class="card-title">Dani Perdue</h5>
+                <h5 class="card-title bold-font">Dani Perdue</h5>
                 <h6>President</h6>
               </div>
               <p class="card-text">Dani is a 4th year Ph.D. student in the Mechanical Engineering Department. Her research interests are in heat and mass transfer as well as fluid dynamics. I enjoy relating fundamental properties to real-world applications. Water scarcity is a crisis that affects the world and   direct contact membrane distillation could be a solution for those in need of clean water.</p>
@@ -167,7 +219,7 @@
             </div>
             <div class="card-body">
               <div class="name-and-title">
-                <h5 class="card-title">Nick Jean-Louis</h5>
+                <h5 class="card-title bold-font">Nick Jean-Louis</h5>
                 <h6>Vice President</h6>
               </div>
 
@@ -181,7 +233,7 @@
             </div>
             <div class="card-body">
               <div class="name-and-title">
-                <h5 class="card-title">Joshua Moore</h5>
+                <h5 class="card-title bold-font">Joshua Moore</h5>
                 <h6>Secretary</h6>
               </div>
               <p class="card-text">Jordan is a 4th year Ph.D. student in the Biochemistry and Cell Biology Program of the Biosciences Department. His research is focused on quantifying the efficiencies of electron transfer pathways in living cells. In addition to his work in the BGSA he is also the treasurer of the Biosciences GSA and a mentor to the Rice IGEM team. His hobbies include writing and playing board games. In the future, he hopes to become a faculty member and establish a stronger relationship between research institutions and HBCUs.</p>
@@ -194,7 +246,7 @@
             </div>
             <div class="card-body">
               <div class="name-and-title">
-                <h5 class="card-title">Jordan Bluford</h5>
+                <h5 class="card-title bold-font">Jordan Bluford</h5>
                 <h6>Treasurer</h6>
               </div>
 
@@ -202,75 +254,37 @@
             </div>
           </div>
 
-        </div>
-      </div>
-    </div>
-
-
-    <div class="">
-      <div class="content-container">
-        <h2>Events</h2>
-
-        <div id="events-card-container">
-          <div class="card event-card">
-            <img src="" alt="">
-            <div class="event-card-body">
-              <div class="name-and-title">
-                <h5 class="card-title">Navigating Grad Life</h5>
-                <h6>August, 2019</h6>
-              </div>
-              <p class="card-text"></p>
-            </div>
-          </div>
-
-          <div class="card event-card">
-            <img src="" alt="">
-            <div class="event-card-body">
-              <div class="name-and-title">
-                <h5 class="card-title">Writing Workshop: Fellowships and Application</h5>
-                <h6>October, 2019</h6>
-              </div>
-              <p class="card-text"></p>
-            </div>
-          </div>
-
-          <div class="card event-card">
-            <div class="event-card-body">
-              <div class="name-and-title">
-                <h5 class="card-title">Friendsgiving</h5>
-                <h6>November, 2019</h6>
-              </div>
-
-              <p class="card-text"></p>
-            </div>
-          </div>
-
-          <div class="card event-card">
-            <img src="" alt="">
-            <div class="event-card-body">
-              <div class="name-and-title">
-                <h5 class="card-title">Holiday Party</h5>
-                <h6>December, 2019</h6>
-              </div>
-
-              <p class="card-text"></p>
-            </div>
-          </div>
-
-          <div class="card event-card">
-            <img src="" alt="">
-            <div class="event-card-body">
-              <div class="name-and-title">
-                <h5 class="card-title">Place Holder</h5>
-                <h6>January, 2020</h6>
-              </div>
-              <p class="card-text"></p>
-            </div>
-          </div>
 
         </div>
       </div>
     </div>
+
+    <footer class="bg-rice-blue">
+      <div class="content-container" id='contact-us'>
+        <h2>Contact Us</h2>
+        <div class="contact-us-container">
+          <span><a href="mailto:bgsa@rice.edu">bgsa@rice.edu</a> </span>
+          <ul class="social-media-container">
+            <li><a href="https://www.facebook.com/Ricebgsa/ ">
+                <i class="fab fa-facebook-f fa-lg social-media-icon"></i></a>
+            </li>
+
+            <li><a href="https://twitter.com/BGSARice">
+              <i class="fab fa-twitter fa-lg social-media-icon"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/bgsarice">
+                <i class="fab fa-instagram fa-lg social-media-icon"></i></a>
+            </li>
+
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
 
 
     <!-- Optional JavaScript -->
@@ -284,5 +298,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+    </footer>
   </body>
 </html>

@@ -1,5 +1,10 @@
 body {
   background-color: #fff;
+  font-family: 'Roboto', sans-sans-serif;
+}
+
+.bold-font {
+  font-weight: bold;
 }
 
 .banner-carousel-container{
@@ -13,18 +18,11 @@ body {
   align-items: center;
   padding: 20px;
   margin: 10px;
-  box-shadow: 0px 0px 15px grey;
+  box-shadow: 0px 0px 1px grey;
   background-color: #fff;
 }
 
-.event-card {
-  width: 250px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .card img {
   max-height: 200px;
@@ -41,7 +39,7 @@ body {
 #events-card-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -96,6 +94,15 @@ body {
   display: block;
   text-transform: uppercase;
   font-size: 84px;
+  font-weight: bold;
+}
+
+#university{
+  font-size: 60px;
+}
+
+#btn-subscribe{
+  font-size: 30px;
 }
 
 .content-container {
@@ -111,7 +118,15 @@ body {
   color: #00205B;
 }
 
+#contact-us h2{
+  color: #eff6fc;
+}
 
+.contact-us-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .bg-rice-blue {
   background-color: #00205B;
 }
@@ -134,33 +149,52 @@ body {
   background-color: #ADC7DC;
 }
 
+
+#event-header{
+  color: #eff6fc;
+}
+
 .event-card-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  text-align: center;
-}
-.goals-container {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  padding: 10px;
 }
 
-.goal-card {
-  border: 1px solid transparent;
-  border-radius: 15px;
-  margin: 0 15px;
-  padding: 20px;
+.event-card-body ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.event-card {
+  width: 250px;
+  margin: 26px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 0px 5px gray;
-  transition: .2s;
+  transition: 0.2s;
+  border: none;
 }
 
-.goal-card:hover{
+.event-card-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-card-header h5 {
+  font-weight: bold;
+}
+
+.event-card:hover{
   transform: scale(1.1);
+}
+
+.event-title-date {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .goal-card-text{
@@ -178,8 +212,34 @@ body {
 
 .social-media-container {
   margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
 }
+
 
 .social-media-icon {
   margin: 0 5px;
+}
+
+@media only screen and (max-width: 700px){
+  #club-name{
+  font-size: 40px;
+  }
+
+  #university{
+    font-size: 30px;
+  }
+
+  #btn-subscribe{
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 15px;
+  }
+  .eboard-card {
+    flex-direction: column;
+  }
 }
